@@ -1,6 +1,6 @@
-# portfolio
-Mon petit portfolio
+# Card
+Mon carte numérique
 
-Je te laisse y jeter un coup d'Œil mais seulement UN
+Je te laisse y jeter un coup d'Œil
 
-https://portfolio-trax.netlify.app/
+https://card-traxxouu.netlify.app/
