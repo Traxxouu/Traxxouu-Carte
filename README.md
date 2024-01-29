@@ -1,6 +1,6 @@
 # Card
-Mon carte numérique
+Ma carte numérique
 
 Je te laisse y jeter un coup d'Œil
 
-https://traxxouu-card.netlify.app/
+  • https://traxxouu-card.netlify.app/
