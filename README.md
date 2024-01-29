@@ -3,4 +3,4 @@ Mon carte numérique
 
 Je te laisse y jeter un coup d'Œil
 
-https://card-traxxouu.netlify.app/
+https://traxxouu-card.netlify.app/
