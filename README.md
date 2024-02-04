@@ -14,4 +14,8 @@ Bienvenue sur ma carte numérique, une interface simple et conviviale pour déco
  - **HTML**
  - **CSS**
  - **JavaScript**
+   
 N'hésitez pas à explorer, à me suivre sur les réseaux, et à me contacter pour toute collaboration ou projet.
+
+##
+**© 2024 Traxxouu. Tous droits réservés.**
