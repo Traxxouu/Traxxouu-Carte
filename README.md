@@ -18,4 +18,7 @@ Bienvenue sur ma carte numérique, une interface simple et conviviale pour déco
 N'hésitez pas à explorer, à me suivre sur les réseaux, et à me contacter pour toute collaboration ou projet.
 
 ##
+## Voici mon compte PayPal pour rembourser les heures de sommeil perdues.👋
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/frtrax?country.x=FR&locale.x=fr_FR) 
+#
 **© 2024 Traxxouu. Tous droits réservés.**
