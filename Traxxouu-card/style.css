@@ -1,3 +1,4 @@
+/* CSS de base pour tous les appareils */
 * {
   margin: 0;
   padding: 0;
@@ -27,19 +28,17 @@
   backdrop-filter: blur(5px);
 }
 
-
-
 .carte img {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  object-fit: cover; /* Ensures the image remains round */
+  object-fit: cover; /* Pour garantir que l'image reste ronde */
 }
 
 .carte .title {
   font-family: 'Roboto', sans-serif;
   font-size: 22px;
-  color: #4CAF50; /* Chosen to add a professional touch */
+  color: #4CAF50; /* Pour un rendu plus professionnel */
 }
 
 .carte .info {
@@ -50,10 +49,8 @@
 }
 
 .carte .info h4 {
-  margin-bottom: 10px; /* Adds space between h4 and p */
+  margin-bottom: 10px; /* Ajoute un espace entre le titre et le paragraphe */
 }
-
-
 
 .carte .reseau img {
   width: 40px;
@@ -63,7 +60,6 @@
   transition: transform 0.3s ease;
 }
 
-
 .carte .reseau img:hover {
   transform: scale(1.1);
 }
@@ -71,7 +67,7 @@
 .buttons {
   display: flex;
   flex-direction: column;
-  gap: 20px; 
+  gap: 20px;
   align-items: center;
 }
 
@@ -89,9 +85,6 @@
 .button:hover {
   background: #314e86;
 }
-
-
-
 
 .skills-container {
   font-family: 'Roboto Mono', monospace;
@@ -111,4 +104,49 @@
   0% { opacity: 1; }
   50% { opacity: 0; }
   100% { opacity: 1; }
+}
+
+/* Media Queries pour la responsivité */
+
+/* Petits appareils (téléphones) */
+@media (max-width: 768px) {
+  .carte {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .carte img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .carte .title {
+    font-size: 20px;
+  }
+
+  .carte .info {
+    font-size: 16px;
+  }
+
+  .buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+
+  .skills-container {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .reseau img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+  }
 }
