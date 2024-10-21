@@ -8,7 +8,7 @@ Bienvenue sur ma carte numérique, une interface simple et conviviale pour déco
 
 - **Me Contacter**: Utilisez le bouton "Me Contacter" pour ouvrir une fenêtre permettant de me contacter par email.
 
-- **Réseaux Sociaux**: Retrouvez-moi sur les réseaux sociaux avec quatre boutons dédiés : Twitch, Discord, Twitter, et GitHub.
+- **Réseaux Sociaux**: Retrouvez-moi sur les réseaux sociaux avec quatre boutons dédiés : Discord, Twitter, GitHub...
 
 # Technologies Utilisées
  - **HTML**
