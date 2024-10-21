@@ -1,147 +1,114 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.ecran{
-    width: 100%;
-    height: 100vh;
-    background-image: url(media/computer.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-.carte{
-    width: 95%;
-    max-width: 660px;
-    color:rgb(0, 0, 0);
-    text-align: center;
-    padding: 20px 0px;
-    border: 1px solid rgba(0, 0, 0, 3);
-    background: rgba(0, 0, 0, 0.80);
-    border-radius: 16px;
-    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-}
-.carte img{
-    width: 160px;
-    border-radius: 50%;
-}
-.carte p{
-    font-size: 20px;
-    margin: 2px auto;
-    max-width: 330px;
-}
-
-.carte .reseau img{
-    width: 40px;
-    border-radius: 50%;
-    margin: 20px 5px;
-    transition: background 0.5s;
-}
-
-.carte .reseau img:hover{
-    background: #ffffff;
-}
-
-
-
-.infotrax{
-    font-family: 'Modern Antiqua', cursive;
-    color: rgb(232, 232, 232);
-    font-size: 20px;
-} 
-
-
-.titletrax{
-    font-family: 'MuseoModerno', cursive;
-    font-size: 25px;
-    color: rgb(113, 84, 255);
-}
-
-.button{
-    text-decoration: none;
-    display: inline-block;
-    font-size: 22px;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
-    padding: 20px 30px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin: 0px;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    background: transparent;
-    transition: all 0.3s ease;
-    box-shadow:inset 2px 2px 2px 0px rgba(255, 255, 255, 0.702),
-    7px 7px 20px 0px rgba(255, 255, 255, 0),
-    4px 4px 5px 0px rgba(0, 0, 0, 0.174);
-
-}
-
-
-.button span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-.button:before,
-.button:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  top: 0;
-  transition: all 0.3s ease;
-}
-.button:before {
-  height: 0%;
-  width: 2px;
-}
-.button:after {
-  width: 0%;
-  height: 2px;
-}
-.button:hover{
-   background: transparent;
-  box-shadow: none;
-}
-.button:hover:before {
-  height: 100%;
-}
-.button:hover:after {
+.ecran {
   width: 100%;
+  height: 100vh;
+  background-image: url(media/background.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.button span:hover{
-   color: rgba(2,126,251,1);
+
+.carte {
+  width: 90%;
+  max-width: 600px;
+  color: #FFF;
+  text-align: center;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 16px;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
 }
-.button span:before,
-.button span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: 0;
-   background: rgba(2,126,251,1);
-  transition: all 0.3s ease;
+
+
+
+.carte img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the image remains round */
 }
-.button span:before {
-  width: 2px;
-  height: 0%;
+
+.carte .title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: #4CAF50; /* Chosen to add a professional touch */
 }
-.button span:after {
-  width: 0%;
-  height: 2px;
+
+.carte .info {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(232, 232, 232);
+  font-size: 18px;
+  margin-top: 10px;
 }
-.button span:hover:before {
-  height: 100%;
+
+.carte .info h4 {
+  margin-bottom: 10px; /* Adds space between h4 and p */
 }
-.button span:hover:after {
-  width: 100%;
+
+
+
+.carte .reseau img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 15px;
+  transition: transform 0.3s ease;
+}
+
+
+.carte .reseau img:hover {
+  transform: scale(1.1);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  align-items: center;
+}
+
+.button {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #FFF;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: #3b5998;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: #314e86;
+}
+
+
+
+
+.skills-container {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 18px;
+  color: #4CAF50;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#cursor {
+  display: inline-block;
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
