@@ -1,3 +1,5 @@
+//main js dev inter traxxouu
+
 document.addEventListener("DOMContentLoaded", function () {
     // Add button hover effects
     const buttons = document.querySelectorAll(".button");
